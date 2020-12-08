@@ -1,4 +1,4 @@
-const base = 'https://modest-clarke-c9fc62.netlify.app/'
+const base = 'http://localhost:8080/'
 
 export const oidcSettings = {
   authority: 'https://accounts.google.com',
@@ -11,16 +11,17 @@ export const oidcSettings = {
   automaticSilentSignin: false,
   silentRedirectUri: base + 'silent-renew-oidc.html'
 }
+
 /*
 export const oidcSettings = {
-  authority: 'https://pocid-id.bluesign.com',
-  clientId: 'pocid',
-  redirectUri: 'http://localhost:8080/callback',
-  popupRedirectUri: 'http://localhost:8080/oidc-popup-callback',
-  responseType: 'id_token token',
-  scope: 'openid profile',
-  automaticSilentRenew: true,
-  automaticSilentSignin: false,
-  silentRedirectUri: 'http://localhost:8080/silent-renew-oidc.html'
+authority: 'https://pocid-id.bluesign.com',
+clientId: 'pocid',
+redirectUri: base + 'callback',
+popupRedirectUri: base + 'oidc-popup-callback',
+responseType: 'id_token token',
+scope: 'openid profile',
+automaticSilentRenew: true,
+automaticSilentSignin: false,
+silentRedirectUri: base + 'silent-renew-oidc.html'
 }
 */
